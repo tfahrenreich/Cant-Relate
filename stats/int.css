@@ -1,0 +1,184 @@
+html,
+body {
+	background: #F4EEFE url(imgs/4.png) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+	min-height:100%;
+}
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#home {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.content {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 300px;
+	width: 302px;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFF;
+	font-weight: normal;
+	margin-top: -150px;
+	margin-left: -151px;
+	text-align: center;
+	z-index: 1;
+	overflow: hidden;
+	-webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}.contenthide {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 300px;
+	width: 302px;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFF;
+	font-weight: normal;
+	margin-top: -102%;
+	margin-left: -151px;
+	text-align: center;
+	z-index: 1;
+	overflow: hidden;    
+	-webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+#comingcontent {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 315px;
+	width: 303px;
+	font-family: "Courier New", Courier, monospace;
+	color: #000;
+	font-weight: normal;
+	margin-top: -150px;
+	margin-left: -151px;
+	text-align: center;
+	z-index: 4;
+	overflow: hidden;
+}
+#overlay {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFF;
+	font-weight: normal;
+	margin-top: -250px;
+	margin-left: -250px;
+	text-align: center;
+	z-index: 3;
+	overflow: hidden;
+}
+#logo {
+	height: 166px;
+	width: 302px;
+	background-image: url(imgs/cntrlt_int.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+#templogo {
+	height: 261px;
+	width: 302px;
+	background-image: url(imgs/cntrlt_inttemp.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+	line-height: 2em;
+	letter-spacing: .5em;
+	font-size: 12px;
+	text-decoration: none;
+}
+#footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	font-family: "Courier New", Courier, monospace;
+	text-align: right;
+	color: #FFF;
+	right: 0px;
+	z-index: 5;
+	background-color: #000;
+}
+.panel{
+    min-width: 100%;
+    height: 100%;
+    margin-left: -102%;
+    position: absolute;
+    background: #FFF;
+    box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+    z-index: 2;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.panel:target{
+    margin-left: 0%;
+}
+.nav {
+	position: absolute;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFF;
+	z-index: 6;
+	background-color: #000;
+	left: 0px;
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	margin-top: -150%;
+}
+#nav ul, #nav li {
+	list-style-type: none;
+	letter-spacing: 0.5em;
+	font-size: 12px;
+	display: inline;
+	padding: 0;
+}
+.navopen {
+	position: absolute;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFF;
+	z-index: 6;
+	background-color: #000;
+	left: 0px;
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	overflow-y: auto;
+	overflow-x: auto;
+	margin-top: 0%;
+}

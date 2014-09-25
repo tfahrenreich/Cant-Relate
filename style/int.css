@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'futura_bk_btbook';
+    src: url('futuran-webfont.eot');
+    src: url('futuran-webfont.eot?#iefix') format('embedded-opentype'),
+         url('futuran-webfont.woff') format('woff'),
+         url('futuran-webfont.ttf') format('truetype'),
+         url('futuran-webfont.svg#futura_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futura_md_btbold';
+    src: url('futurab-webfont.eot');
+    src: url('futurab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('futurab-webfont.woff') format('woff'),
+
+         url('futurab-webfont.svg#futura_md_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+body {
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+	min-height:100%;
+	background-color:#000
+} 
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+a img {outline : none;}
+a {outline : none;}
+img {border : 0;}
+#main {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.content {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 300px;
+	width: 302px;
+	font-family: "futura_bk_btbook";
+	color: #FFF;
+	font-weight: normal;
+	margin-top: -150px;
+	margin-left: -151px;
+	text-align: center;
+	z-index: 1;
+	overflow: hidden;
+	-webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.contenthide {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 300px;
+	width: 302px;
+	font-family: "futura_bk_btbook";
+	color: #FFF;
+	font-weight: normal;
+	margin-top: -102%;
+	margin-left: -151px;
+	text-align: center;
+	z-index: 1;
+	overflow: hidden;    
+	-webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.aboutcontent {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	font-family: "futura_bk_btbook"; 
+	font-size:14px;
+	color: #000;
+	font-weight: normal;
+	margin-top: -200px;
+	margin-left: -200px;
+	padding: 10px;
+	text-align: justify;
+	z-index: 4;
+	overflow: hidden;
+}
+
+.cnt {
+font-family: "futura_bk_btbook"; font-size:12px;
+}
+#cntleftcolumn {
+	width: 49.5%;
+	top: 40%;
+    height: 20%;
+    position: absolute;
+	 text-align:right;
+	 vertical-align: middle;
+
+}
+
+#cntrightcolumn { 
+ 	width: 49.5%;
+	top: 40%;
+    height: 20%%;
+    position: absolute;
+	text-align:left;
+	right: 0PX;
+	vertical-align: middle;
+}
+
+#cntcent { 
+ 	width: 1px;
+	top: 10%;
+    height: 80%;
+    position: absolute;
+	right: 50%;
+	border-right:1px dotted rgb(119, 119, 119);
+}
+
+#overlay {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	font-family: "futura_bk_btbook";
+	color: #FFF;
+	font-weight: normal;
+	margin-top: -250px;
+	margin-left: -250px;
+	text-align: center;
+	z-index: 3;
+	overflow: hidden;
+}
+#logo {
+	height: 166px;
+	width: 302px;
+	background-image: url(../imgs/cntrlt_int.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+.templogo {
+	height: 262px;
+	width: 304px;
+	left: 50%;
+	margin: auto;
+	background-image: url(../imgs/cntrlt_inttemp.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+	line-height: 2em;
+	letter-spacing: .5em;
+	font-size: 12px;
+	text-decoration: none;
+}
+#footer {
+	position: absolute;
+	bottom: 0px;
+	font-family: 'futura_bk_btbook';
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+	text-align: right;
+	color: #777;
+	right: 0px;
+	z-index: 5;
+}
+.panel{
+	font-family: "futura_bk_btbook"; font-size:12px;
+    min-width: 80%;
+	top: 10%;
+    height: 80%;
+    margin-left: -102%;
+	color: #FFF;
+    position: absolute;
+	background-image: url(/imgs/transbg.png);
+    box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+    z-index: 2;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;	
+}
+
+.panelabt{
+    min-width: 80%;
+	top: 10%;
+    height: 80%;
+    margin-left: -102%;
+    position: absolute;
+    z-index: 2;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;	
+}
+.panel:target{
+    margin-left: -10%;
+	left: 20%;
+	top: 10%;
+	overflow: hidden;
+}
+
+.panelabt:target{
+    margin-left: -10%;
+	left: 20%;
+	top: 10%;
+	overflow: hidden;
+}
+
+.nav {
+	position: absolute;
+	color: #FFF;
+	z-index: 6;
+	left: 0px;
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	margin-top: -150%; 
+}
+
+#nav ul, #nav li {
+	list-style-type: none;
+	font-size: 16px;
+	display: inline;
+	padding: 3px 5px 1px 5px;
+	font-family: "futura_md_btbold";
+	text-transform: uppercase;
+	letter-spacing: 0em;
+}
+#nav span {
+	list-style-type: none;
+	font-size: 30px;
+	display: inline;
+	font-family: "futura_bk_btbook";
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	vertical-align: middle;;
+}
+ h3{
+	list-style-type: none;
+	font-size: 16px;
+	display: inline;
+	padding: 3px 5px 1px 5px;
+	font-family: "futura_md_btbold";
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	line-height: 2em;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+ }
+ #contact span {
+	list-style-type: none;
+	font-size: 14px;
+	display: inline;
+	font-family: "futura_md_btbold";
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	vertical-align: middle;
+ }
+#nav img {
+	padding-top: 3px;
+	
+}
+#nav li:hover    {
+	background-color: #000000;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 3px 5px 1px 5px;
+}
+.navopen {
+	position: absolute;
+	color: #FFF;
+	z-index: 6;
+	left: 0px;
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	overflow-y: auto;
+	overflow-x: auto;
+	margin-top: 0%;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+#storeframe {
+	height: 100%;
+	width: 100%;
+
+}#blogframe {
+	height: 100.3%;
+	width: 100%;
+	
+}.bgmain {
+	background: url(../imgs/4.png) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 0;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	
+}.shpbg {
+	background: url(../imgs/shopbg.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 0;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	
+}.abtbg {
+	background: url(../imgs/aboutbg.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 0;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;	
+
+}.cntbg {
+	background: url(../imgs/contactbg.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 0;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;	
+
+}.extbg {
+	background: url(../imgs/34.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 0;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;	
+	
+}.colbg {
+	background: url(../imgs/extrabg.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 0;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;	
+	
+}.bgopen {
+	margin-left: 0%;
+	opacity: 1;
+	
+}#loading {
+	-moz-background-size: cover;
+	background-color:#000;
+	background-size: cover;
+	min-width: 100%;
+	height: 100%;
+	margin-left: 0%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 10;	
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 1;
+   	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
